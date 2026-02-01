@@ -1,0 +1,27 @@
+pkgbase = artifacthub
+	pkgdesc = Find, install and publish Cloud Native packages
+	pkgver = 1.22.0
+	pkgrel = 1
+	url = https://github.com/artifacthub/hub
+	arch = aarch64
+	arch = x86_64
+	license = Apache 2.0
+	makedepends = go
+	depends = tensorflow
+	source = https://github.com/artifacthub/hub/archive/refs/tags/v1.22.0.zip
+	sha512sums = 1d636cbfd1dca3aba5764e70d52ad066b6eaf08d99bc9e69689984a1cbbac88e383633d9499bed99ad9c4c975ff9535988b522f0869f24bf9480b9371be57805
+	b2sums = 50edb0b262cd168db3cdf113ffddd3d0c0f38ee43b17f82a9e125738363252de8f6b07bcb9963a699ffd60ae7e7c5b2aefd756df795056ca9e9660c797193c79
+
+pkgname = artifacthub-cli
+	pkgdesc = Artifact Hub CLI tool
+
+pkgname = artifacthub-hub
+	pkgdesc = Artifact Hub is a web-based application that enables finding, installing, and publishing Kubernetes packages
+
+pkgname = artifacthub-scanner
+	pkgdesc = Artifact Hub scanner tool
+	depends = artifacthub-hub
+
+pkgname = artifacthub-tracker
+	pkgdesc = Artifact Hub tracker tool
+	depends = artifacthub-hub
