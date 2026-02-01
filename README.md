@@ -1,9 +1,9 @@
-# opa-regal
+# ArtifactHub
 
-![AUR version](https://img.shields.io/aur/version/opa-regal?label=AUR)
-![AUR votes](https://img.shields.io/aur/votes/opa-regal)
+![AUR version](https://img.shields.io/aur/version/artifacthub?label=AUR)
+![AUR votes](https://img.shields.io/aur/votes/artifacthub)
 
-This repository contains build files to build the Arch Linux package `opa-regal`. Instead of building the package
+This repository contains build files to build the Arch Linux package `artifacthub`. Instead of building the package
 yourself, it can also be obtained from the following private repository. More detailed are described
 [here](#obtaining-pre-built-packages-from-a-repository).
 
@@ -12,8 +12,8 @@ yourself, it can also be obtained from the following private repository. More de
 Clone this repository and use `makepkg` to build the package by yourself. For example:
 
 ```bash
-git clone https://aur.archlinux.org/opa-regal.git
-cd opa-regal
+git clone https://aur.archlinux.org/artifacthub.git
+cd artifacthub
 makepkg
 ```
 
@@ -22,7 +22,7 @@ makepkg
 The build files are also available via AUR and can be installed via an AUR helper like `yay`.
 
 ```bash
-yay --sync --aur opa-regal
+yay --sync --aur artifacthub
 ```
 
 ## Obtaining pre-built packages from a repository
@@ -57,5 +57,5 @@ sudo echo "Include = /etc/pacman.d/repos/*.conf" >> /etc/pacman.conf
 sudo pacman --sync --refresh
 
 # Install the package and receive updates directly via pacman :)
-sudo pacman --sync opa-regal
+sudo pacman --sync artifacthub
 ```
