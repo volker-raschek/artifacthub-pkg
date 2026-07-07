@@ -7,7 +7,7 @@ pkgname=(
   'artifacthub-scanner'
   'artifacthub-tracker'
 )
-pkgver=1.22.0 # renovate: datasource=github-tags depName=artifacthub/hub extractVersion='^v?(?<version>.*)$'
+pkgver=1.23.0 # renovate: datasource=github-tags depName=artifacthub/hub extractVersion='^v?(?<version>.*)$'
 pkgrel=1
 pkgdesc="Find, install and publish Cloud Native packages"
 arch=('aarch64' 'x86_64')
@@ -17,8 +17,8 @@ makedepends=("go" "tensorflow")
 source=(
   "$url/archive/refs/tags/v${pkgver}.zip"
 )
-sha512sums=('1d636cbfd1dca3aba5764e70d52ad066b6eaf08d99bc9e69689984a1cbbac88e383633d9499bed99ad9c4c975ff9535988b522f0869f24bf9480b9371be57805')
-b2sums=('50edb0b262cd168db3cdf113ffddd3d0c0f38ee43b17f82a9e125738363252de8f6b07bcb9963a699ffd60ae7e7c5b2aefd756df795056ca9e9660c797193c79')
+sha512sums=('20e554c5fc83b7f7346714c50e4059cd20e6ff1d4c511e0a38514ff9e0f3b1cb41de0f3ea7ddc37a70ed4e435cefb430e56987cbb41640f42923d0d11523a674')
+b2sums=('340dd3f40efec108d94d0630755da1ed384171b810616aaafa672fbed2f1f71c1784a2d739df126fe0e846e57139fbe61aaa76e2be8100fbacacca780b98107f')
 
 prepare() {
   cd hub-${pkgver}
